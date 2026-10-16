@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search, filter and sort the full collection.">
+  <title>Shop | TITAN BRAND</title>
+  <link rel="stylesheet" href="style_1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="index.html"><h2>TITAN</h2><span>BRAND</span></a>
+    <ul id="navLinks">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="men.html">MEN</a></li>
+      <li><a href="women.html">WOMEN</a></li>
+      <li><a href="#contactme">CONTACT</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart"><i class="fa-solid fa-bag-shopping"></i><span class="badge" id="cartCount">0</span></button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+  <header class="page-head"><h1>Shop All</h1><p>Search, filter and sort the full collection.</p></header>
+  <main class="container">
+    <div class="toolbar">
+      <div class="filters">
+        <button class="chip active" data-cat="all">All</button>
+        <button class="chip" data-cat="men">Men</button>
+        <button class="chip" data-cat="women">Women</button>
+      </div>
+      <div class="tools">
+        <input type="search" id="search" placeholder="Search products" aria-label="Search products">
+        <select id="sort" aria-label="Sort products">
+          <option value="default">Sort: Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+    <div class="products" id="products"></div>
+  </main>
+  <footer>
+    <h2 id="contactme">Contact Me</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/shnoda_sameh/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:shnodatyuh@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <p>© 2026 TITAN. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TITAN BRAND - clothing for men and women, Collection 2026.">
+  <title>TITAN BRAND | Collection 2026</title>
+  <link rel="stylesheet" href="style_1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="index.html"><h2>TITAN</h2><span>BRAND</span></a>
+    <ul id="navLinks">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="men.html">MEN</a></li>
+      <li><a href="women.html">WOMEN</a></li>
+      <li><a href="#contactme">CONTACT</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Open cart"><i class="fa-solid fa-bag-shopping"></i><span class="badge" id="cartCount">0</span></button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="hero-text">
+      <h1>COLLECTION<br>2026</h1>
+      <p>Discover the latest styles crafted for comfort and confidence.</p>
+      <div class="hero-cta">
+        <a class="btn" href="shop.html">SHOP NOW</a>
+        <a class="btn ghost" href="#featured">See featured</a>
+      </div>
+    </div>
+
+    <div class="hero-stage" id="heroStage">
+      <div class="ring"></div>
+      <div class="hero-frame" id="heroFrame">
+        <img src="./images/p.wepb.jpg" alt="Five pairs of trousers hanging on a wooden rack beside a duffel bag and loafers">
+        <div class="float f1"><i class="fa-solid fa-star"></i>New season</div>
+        <div class="float f2"><i class="fa-solid fa-truck-fast"></i>Delivery in 2-4 days</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span><i class="fa-solid fa-bolt"></i>New drops every month</span>
+      <span><i class="fa-solid fa-bolt"></i>Free returns for 14 days</span>
+      <span><i class="fa-solid fa-bolt"></i>Made for comfort</span>
+      <span><i class="fa-solid fa-bolt"></i>Men &amp; Women</span>
+      <span><i class="fa-solid fa-bolt"></i>New drops every month</span>
+      <span><i class="fa-solid fa-bolt"></i>Free returns for 14 days</span>
+      <span><i class="fa-solid fa-bolt"></i>Made for comfort</span>
+      <span><i class="fa-solid fa-bolt"></i>Men &amp; Women</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="section container">
+      <div class="categories">
+        <div class="cat-card men-card"><h2>MEN</h2><a href="men.html">Shop Men</a></div>
+        <div class="cat-card women-card"><h2>WOMEN</h2><a href="women.html">Shop Women</a></div>
+      </div>
+    </section>
+    <section class="section container" id="featured">
+      <h2 class="section-title">Featured pieces</h2>
+      <p class="section-sub">Tap a photo for a quick look.</p>
+      <div class="products" id="products" data-featured="true"></div>
+    </section>
+    <section class="section container">
+      <h2 class="section-title">Lookbook</h2>
+      <p class="section-sub">A closer look at this season.</p>
+      <div class="lookbook">
+        <a href="men.html" class="look look-tall"><img src="./classic polo.webp" alt="Classic Polo from the men's collection" loading="lazy"><span>Men</span></a>
+        <a href="women.html" class="look"><img src="./Dress.webp" alt="Dress from the women's collection" loading="lazy"><span>Women</span></a>
+        <a href="men.html" class="look"><img src="./crew neck.jpg" alt="Crew neck t-shirt" loading="lazy"><span>Essentials</span></a>
+        <a href="women.html" class="look"><img src="./Linen Dresses.webp" alt="Linen dress" loading="lazy"><span>Linen</span></a>
+        <a href="shop.html" class="look"><img src="./shopping.webp" alt="Palazzo pants" loading="lazy"><span>Shop all</span></a>
+      </div>
+    </section>
+    <section class="section container">
+      <div class="perks">
+        <div class="perk"><i class="fa-solid fa-truck-fast"></i><h3>Fast delivery</h3><p>Orders arrive in 2-4 days across Egypt.</p></div>
+        <div class="perk"><i class="fa-solid fa-rotate-left"></i><h3>Easy returns</h3><p>Change your mind within 14 days.</p></div>
+        <div class="perk"><i class="fa-solid fa-shield-halved"></i><h3>Secure checkout</h3><p>Your details stay private.</p></div>
+      </div>
+    </section>
+    <section class="section newsletter">
+      <h2 class="section-title">Get new drops first</h2>
+      <p class="section-sub" style="margin-bottom:0">Join the list. No spam, only new collections.</p>
+      <form class="nl-form" id="nlForm" novalidate>
+        <input type="email" id="nlEmail" placeholder="Your email" aria-label="Email address">
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="nl-msg" id="nlMsg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <h2 id="contactme">Contact Me</h2>
+    <div class="social-icons">
+      <a href="" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="mailto:shnodatyuh@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <p>© 2026 TITAN. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
